@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", "Arial", sans-serif;
+}
+a {
+  color: #000;
+}
+.menu {
+  height: 48px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__icon {
+  margin: 30px;
+  width: 34px;
+}
+.menu__link {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #757575;
+  padding: 12px 8px;
+}
+.menu__link:not(.active) {
+  margin-bottom: 2px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content__logo {
+  height: 56px;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.content h1 {
+  color: #444444;
+}
+.content__search__container {
+  width: 95%;
+  max-width: 800px;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.content__search__icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.content__search__icon:hover {
+  opacity: 0.7;
+}
+
+.content__search__icon__img {
+  height: 40px;
+}
+
+.content__logo:hover {
+  transform: rotate(180deg);
+}
+.content__search {
+  width: 100%;
+  padding: 20px 30px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.87);
+  background: 0 0;
+  border-radius: 45px;
+  border: 1px solid #dadce0;
+  outline: 0;
+  transition: 1s;
+}
+.content__search:hover {
+  border: 1px solid rgb(46, 46, 46);
+}
+.content__sites,
+.content__favs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0 50px;
+}
+.content__sites__title,
+.content__favs_title {
+  margin: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.content__site {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  margin: 10px;
+  transition: 0.3s;
+}
+.content__site:hover {
+  scale: 1.06;
+}
+.content__site a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.content__fav {
+  flex-direction: column;
+  justify-content: center;
+  background-color: #c7c7c7;
+  align-items: center;
+  width: 150px;
+  height: 80px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-decoration: none;
+  display: flex;
+}
+.content__fav:hover {
+  cursor: pointer;
+  background-color: #54e2e2;
+  scale: 1.2;
+}
+.content__site img {
+  margin-bottom: 15px;
+  width: 100%;
+}
